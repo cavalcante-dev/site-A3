@@ -15,34 +15,6 @@
     height: 100%;
 }
 
-nav {
-    background-color: #BEB7A4;
-    padding: 4vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-size: 4.5vh;
-    font-family: "Roboto Mono", Helvetica;
-    transition: color 0.3s ease;
-
-}
-
-nav:hover {
-    color: #ff3f00;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    margin-right: 5vh;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #ff3f00;
-}
-
 
 .pagina-principal {
     background-color: #ffffff;
