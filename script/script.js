@@ -5,12 +5,12 @@ const cards = [
         description: "Estudante",
     },
     {
-        img: "",
+        img: "./assets/images/integrantes/Miguel.svg",
         name: "MIGUEL ALCHAAR",
         description: "Estudante",
     },
     {
-        img: "",
+        img: "./assets/images/integrantes/Ricardo.svg",
         name: "RICARDO ARAUJO",
         description: "Estudante",
     },
