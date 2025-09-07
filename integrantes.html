@@ -10,67 +10,57 @@
 </head>
 
 <body>
-    <div class="cabecalho">
+
+    <div>
+        
         <nav>
             <a href="./index.html">HOME</a>
             <a href="./integrantes.html"><b>INTEGRANTES</b></a>
         </nav>
+
     </div>
 
-    <div class="pagina-principal">
-        <div class="container-principal">
-            <div class="grupo-sobreposicao">
-                <div class="secao-texto">
-                    <div class="titulo-integrantes">NOSSOS INTEGRANTES</div>
-                    <div class="subtitulo">Conheça nosso time.</div>
-                    <p class="descricao">
-                        um caba brabo da codificação.
-                        coda em varias linguagens e
-                        sabe fazer plugins minecraft
-                    </p>
-                </div>
+    <div class="main-container">
 
+        <div class="secao-texto">
 
-                <div class="carrossel-container">
-                    <div class="secao-perfil">
-                        <div class="fundo-laranja"></div>
-                        <div class="fundo-bege"></div>
+            <h1>NOSSOS INTEGRANTES</h1>
+            <h3>Conheça nosso time.</h3>
+            <p>
+                Somos um grupo de estudantes de Ciência da Computação e Sistemas de Informação na Una Barreiro, unidos
+                pela paixão por tecnologia e inovação. Nossa equipe é composta por profissionais multidisciplinares,
+                com habilidades complementares que nos permitem abordar projetos complexos de diferentes perspectivas.
+                <br><br>
+                Combinamos conhecimentos em desenvolvimento full-stack, design UX/UI, gerenciamento de projetos e bases
+                de dados para criar soluções completas e eficientes. Acreditamos na colaboração como chave para o
+                sucesso e valorizamos a troca de conhecimentos entre os membros.
+            </p>
 
-                        <div class="carrossel-slides">
-                            <div class="slide ativo" data-slide="0">
-                                <img class="foto-perfil"
-                                    src="https://c.animaapp.com/968IrkNo/img/502343438-18388397917191704-4259108169474068147-n-removebg-previ.png"
-                                    alt="Leandro Cavalcante" />
-                                <div class="informacoes-membro">
-                                    <div class="nome-membro">LEANDRO CAVALCANTE</div>
-                                    <p class="bio-membro">Desenvolvedor Full Stack que faz plugin de minecraft</p>
-                                </div>
-                            </div>
-
-                            <div class="controles-navegacao">
-                                <button class="seta-esquerda" onclick="anteriorSlide()">
-                                    <img src="https://c.animaapp.com/968IrkNo/img/arrow-left-circle.svg"
-                                        alt="Anterior" />
-                                </button>
-                                <button class="seta-direita" onclick="proximoSlide()">
-                                    <img src="https://c.animaapp.com/968IrkNo/img/arrow-left-circle-1.svg"
-                                        alt="Próximo" />
-                                </button>
-                                <div class="indicadores-pagina">
-                                    <div class="indicador ativo" onclick="irParaSlide(0)"></div>
-                                    <div class="indicador" onclick="irParaSlide(1)"></div>
-                                    <div class="indicador" onclick="irParaSlide(2)"></div>
-                                    <div class="indicador" onclick="irParaSlide(3)"></div>
-                                    <div class="indicador" onclick="irParaSlide(4)"></div>
-                                    <div class="indicador" onclick="irParaSlide(5)"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
+        <div class="card">
+
+            <div class="card-header">
+                <img id="card-img" src="./assets/images/integrantes/Leandro.svg" alt="Foto do perfil">
+            </div>
+
+            <div class="card-body">
+
+                <h2 id="card-name">LEANDRO CAVALCANTE</h2>
+                <p id="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                <div class="card-footer">
+                    <button id="prev">&larr;</button>
+                    <div class="dots" id="dots">
+                    </div>
+                    <button id="next">&rarr;</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="./script/script.js"></script>
 
 </body>
 

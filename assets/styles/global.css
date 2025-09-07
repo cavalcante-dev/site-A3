@@ -8,27 +8,45 @@
 
 /* ESTILO GERAL */
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   background-color: #fffffc;
   font-family: 'Roboto Mono', monospace;
+  height: 100%;
 }
 
 nav {
   background-color: #beb7a4;
-  padding: 4vh;
+  padding: 2.4vh;
+  padding-left: 25vh;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  font-size: 4.5vh;
+  font-size: 5vh;
+  z-index: 1000;
 }
 
 a {
   text-decoration: none;
   color: black;
-  margin-right: 5vh;
+  margin-right: 4vh;
 }
 
 a:hover {
   color: #fffffc;
+}
+
+@media screen and (max-width: 1680px) {
+
+    nav {
+        padding: 1vh;  
+        padding-left: 25vh;
+    }
+    
 }
