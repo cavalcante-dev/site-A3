@@ -1,22 +1,27 @@
-
 /* ESTILO TOPO DO SITE */
 
 .topo-do-site {
-  padding: 40px 4%;
+  padding: 5vh 4%;
+  margin-top: 15vh;
+  height: 100vh;
 }
 
-.topo-do-site .flex {
-  align-items: center;
-  justify-content: center;
-  gap: 90px;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .topo-do-site h1 {
   color: var(--black-color);
   font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 40px;
+  font-weight: 900;
+  font-size: 13vh;
+  line-height: 12vh;
 }
 
 .topo-do-site .txt-topo-site h1 span {
@@ -24,34 +29,63 @@
 }
 
 .topo-do-site .txt-topo-site h4 {
-  font-size: 20px;
+  padding: 1vh;
+  font-size: 4vh;
   color: var(--red-color);
 }
 
 .topo-do-site .txt-topo-site p {
   color: var(--black-color);
-  margin: 30px 0;
+  margin: 4vh 0;
+  font-size: 2.8vh;
+  text-align: justify;
 }
 
-.topo-do-site .img-topo-site img {
-  position: relative;
-  border-radius: 50%;
-  box-shadow: 0px 0px 50px var(--green-color);
-  animation: flutuar 2s ease-in-out infinite alternate;
+.topo-do-site .parent {
+  align-items: center;
+  gap: 5vh;
 }
 
-.topo-do-site .img-topo-site img:hover {
-  transform: scale(1.03);
-  animation: none;
-  transition: 0.2s;
+.card {
+  max-width: 100vh;
+  width: auto;
+  background-color: #beb7a4;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.2);
+  border-radius: 0.5vh;
 }
 
-@keyframes flutuar {
-  0% {
-    top: 0;
-  }
+.card-image {
+  margin-top: 2vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  overflow: hidden;
+}
 
-  100% {
-    top: 30px;
-  }
+.card-image img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.card-content {
+  padding: 2vh;
+  text-align: left;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 3vh;
+  letter-spacing: 0.2vh;
+}
+
+.card-content p {
+  margin: 1vh 0 2vh;
+  font-size: 2vh;
+  color: #000000;
 }

@@ -8,6 +8,12 @@
 
 /* ESTILO GERAL */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fffffc;
   font-family: 'Roboto Mono', monospace;
@@ -31,4 +37,8 @@ a {
 
 a:hover {
   color: #fffffc;
+}
+
+section {
+  padding: 40px 4%;
 }
