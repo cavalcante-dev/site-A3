@@ -1,0 +1,23 @@
+body {
+    background-color: #FFFFFC;
+    font-family: "Roboto Mono", monospace;
+}
+
+nav {
+    background-color: #BEB7A4;
+    padding: 4vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 4.5vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-right: 5vh;
+}
+
+
+
