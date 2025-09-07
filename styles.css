@@ -1,0 +1,279 @@
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: #beb7a4;
+    z-index: 1000;
+}
+
+.container-navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
+nav {
+    background-color: #BEB7A4;
+    padding: 4vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 4.5vh;
+    font-family: "Roboto Mono", Helvetica;
+    transition: color 0.3s ease;
+
+}
+
+nav:hover {
+    color: #ff3f00;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-right: 5vh;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff3f00;
+}
+
+
+.pagina-principal {
+    background-color: #ffffff;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    width: 100vw;
+    margin-top: 100px;
+
+}
+
+.container-principal {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 936px;
+}
+
+.grupo-sobreposicao {
+    position: relative;
+    height: 936px;
+    background-color: #fffffc;
+}
+
+.secao-texto {
+    position: absolute;
+    width: 697px;
+    height: 724px;
+    top: 56px;
+    left: 711px;
+}
+
+.titulo-integrantes {
+    position: absolute;
+    width: 691px;
+    top: 0;
+    left: 0;
+    font-family: "Roboto Mono", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 99.3px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.subtitulo {
+    position: absolute;
+    top: 276px;
+    left: 0;
+    font-family: "Ubuntu", Helvetica;
+    font-weight: 400;
+    color: #ff3f00;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.descricao {
+    position: absolute;
+    width: 653px;
+    top: 348px;
+    left: 0;
+    font-family: "Roboto Mono", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.carrossel-container {
+    position: absolute;
+    top: 29px;
+    left: 53px;
+}
+
+.secao-perfil {
+    position: relative;
+    width: 592px;
+    height: 751px;
+    overflow: hidden;
+}
+
+.fundo-laranja {
+    height: 724px;
+    top: 27px;
+    background-color: #ff3f00;
+    position: absolute;
+    width: 592px;
+    left: 0;
+}
+
+.fundo-bege {
+    height: 172px;
+    top: 579px;
+    background-color: #beb7a4;
+    position: absolute;
+    width: 592px;
+    left: 0;
+}
+
+.carrossel-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.ativo {
+    opacity: 1;
+}
+
+.foto-perfil {
+    position: absolute;
+    width: 564px;
+    height: 579px;
+    top: 0;
+    left: 28px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.informacoes-membro {
+    position: absolute;
+    width: 547px;
+    height: 72px;
+    top: 603px;
+    left: 24px;
+    z-index: 10;
+}
+
+.nome-membro {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    font-family: "Roboto Mono", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 29.8px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.bio-membro {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    font-family: "Arimo", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 22.3px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.controles-navegacao {
+    position: absolute;
+    width: 211px;
+    height: 33px;
+    top: 698px;
+    left: 25px;
+    z-index: 20;
+}
+
+.seta-esquerda,
+.seta-direita {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.seta-esquerda:hover,
+.seta-direita:hover {
+    transform: scale(1.1);
+}
+
+.seta-esquerda {
+    top: 0;
+    left: 0;
+}
+
+.seta-direita {
+    top: 0;
+    left: 178px;
+}
+
+.seta-esquerda img,
+.seta-direita img {
+    width: 100%;
+    height: 100%;
+}
+
+.indicadores-pagina {
+    position: absolute;
+    width: 99px;
+    height: 15px;
+    top: 10px;
+    left: 56px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.indicador {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicador.ativo {
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+}
+
+.indicador:hover {
+    background-color: #000000;
+    transform: scale(1.1);
+}
