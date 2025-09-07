@@ -1,0 +1,86 @@
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+  --gray-color: #beb7a4;
+  --red-color: #ff3f00;
+  --color-shadow: #ffffff28;
+}
+
+/* ESTILO GERAL */
+
+body {
+  background-color: #fffffc;
+  font-family: 'Roboto Mono', monospace;
+}
+
+nav {
+  background-color: #beb7a4;
+  padding: 4vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 4.5vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-right: 5vh;
+}
+
+/* ESTILO TOPO DO SITE */
+.topo-do-site {
+  padding: 40px 4%;
+}
+
+.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: var(--black-color);
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: var(--red-color);
+}
+
+.topo-do-site .txt-topo-site h4 {
+  font-size: 20px;
+  color: var(--red-color);
+}
+
+.topo-do-site .txt-topo-site p {
+  color: var(--black-color);
+  margin: 30px 0;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px var(--green-color);
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.topo-do-site .img-topo-site img:hover {
+  transform: scale(1.03);
+  animation: none;
+  transition: 0.2s;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 30px;
+  }
+}
