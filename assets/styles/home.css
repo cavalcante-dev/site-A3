@@ -1,35 +1,6 @@
-:root {
-  --black-color: #000;
-  --white-color: #fff;
-  --gray-color: #beb7a4;
-  --red-color: #ff3f00;
-  --color-shadow: #ffffff28;
-}
-
-/* ESTILO GERAL */
-
-body {
-  background-color: #fffffc;
-  font-family: 'Roboto Mono', monospace;
-}
-
-nav {
-  background-color: #beb7a4;
-  padding: 4vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  font-size: 4.5vh;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  margin-right: 5vh;
-}
 
 /* ESTILO TOPO DO SITE */
+
 .topo-do-site {
   padding: 40px 4%;
 }

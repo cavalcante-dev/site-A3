@@ -1,21 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Integrantes</title>
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/integrantes.css" />
 </head>
+
 <body>
-    <nav>
-        <a href="/index.html">HOME</a>
-        <a href="/integrantes.html"><b>INTEGRANTES</b></a>
-    </nav>
-    <div>
-        
+    <div class="cabecalho">
+        <nav>
+            <a href="./index.html">HOME</a>
+            <a href="./integrantes.html"><b>INTEGRANTES</b></a>
+        </nav>
     </div>
+
+    <div class="pagina-principal">
+        <div class="container-principal">
+            <div class="grupo-sobreposicao">
+                <div class="secao-texto">
+                    <div class="titulo-integrantes">NOSSOS INTEGRANTES</div>
+                    <div class="subtitulo">Conheça nosso time.</div>
+                    <p class="descricao">
+                        um caba brabo da codificação.
+                        coda em varias linguagens e
+                        sabe fazer plugins minecraft
+                    </p>
+                </div>
+
+
+                <div class="carrossel-container">
+                    <div class="secao-perfil">
+                        <div class="fundo-laranja"></div>
+                        <div class="fundo-bege"></div>
+
+                        <div class="carrossel-slides">
+                            <div class="slide ativo" data-slide="0">
+                                <img class="foto-perfil"
+                                    src="https://c.animaapp.com/968IrkNo/img/502343438-18388397917191704-4259108169474068147-n-removebg-previ.png"
+                                    alt="Leandro Cavalcante" />
+                                <div class="informacoes-membro">
+                                    <div class="nome-membro">LEANDRO CAVALCANTE</div>
+                                    <p class="bio-membro">Desenvolvedor Full Stack que faz plugin de minecraft</p>
+                                </div>
+                            </div>
+
+                            <div class="controles-navegacao">
+                                <button class="seta-esquerda" onclick="anteriorSlide()">
+                                    <img src="https://c.animaapp.com/968IrkNo/img/arrow-left-circle.svg"
+                                        alt="Anterior" />
+                                </button>
+                                <button class="seta-direita" onclick="proximoSlide()">
+                                    <img src="https://c.animaapp.com/968IrkNo/img/arrow-left-circle-1.svg"
+                                        alt="Próximo" />
+                                </button>
+                                <div class="indicadores-pagina">
+                                    <div class="indicador ativo" onclick="irParaSlide(0)"></div>
+                                    <div class="indicador" onclick="irParaSlide(1)"></div>
+                                    <div class="indicador" onclick="irParaSlide(2)"></div>
+                                    <div class="indicador" onclick="irParaSlide(3)"></div>
+                                    <div class="indicador" onclick="irParaSlide(4)"></div>
+                                    <div class="indicador" onclick="irParaSlide(5)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 </body>
+
 </html>
