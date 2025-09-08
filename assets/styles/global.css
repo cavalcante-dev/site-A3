@@ -22,9 +22,9 @@ body {
 }
 
 nav {
-  background-color: #beb7a4;
+  background-color: var(--gray-color);
   padding: 2.4vh;
-  padding-left: 25vh;
+  padding-left: 4%;
   position: fixed;
   top: 0;
   left: 0;
@@ -32,16 +32,36 @@ nav {
   font-size: 5vh;
   z-index: 1000;
   box-shadow: 0 0.6vh 0.8vh rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--black-color);
   margin-right: 4vh;
 }
 
 a:hover {
   color: #fffffc;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 4vh;
+  color: var(--black-color);
+}
+.links {
+  margin-right: 4%;
+}
+
+.links a {
+  transition: color 0.3s ease;
+}
+
+.links a.negrita {
+  font-weight: 900;
 }
 
 section {
@@ -51,6 +71,6 @@ section {
 @media screen and (max-width: 1680px) {
   nav {
     padding: 1vh;
-    padding-left: 25vh;
+    padding-left: 5%;
   }
 }
